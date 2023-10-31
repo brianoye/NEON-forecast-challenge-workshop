@@ -412,7 +412,7 @@ neon4cast::forecast_output_validator(file.path('Forecasts',forecast_file_1))
 ```{r eval = FALSE}
 # can uses the neon4cast::forecast_output_validator() to check the forecast is in the right format
 neon4cast::submit(forecast_file = file.path('Forecasts', forecast_file_1),
-                  ask = FALSE) # if ask = T (default), it will produce a pop-up box asking if you want to submit
+                  ask = TRUE) # if ask = T (default), it will produce a pop-up box asking if you want to submit
 ```
 
 Is the linear model a reasonable relationship between air temperature and water temperature? Would some non-linear relationship be better? What about using yesterday's air and water temperatures to predict tomorrow? Or including additional parameters? There's a lot of variability in water temperatures unexplained by air temperature alone.
